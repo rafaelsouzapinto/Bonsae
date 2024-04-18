@@ -1,0 +1,15 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: #1161D8;
+    text-align: center;
+    height: 250px;
+}
+
+header > h1 {
+    padding-top: 90px;
+    color: white;
+}
