@@ -48,17 +48,30 @@ header {
 
 .container {
     display: flex;
-    align-items: flex-end;
+    height: 400px;
+    min-width: 350px;
+    max-width: 1300px;
+    margin: auto;
 }
 
-.text, .image-inicio {
-    width: 50%;
-    margin-top: 5%;
-    margin-left: 10%;
-    width:  500px;
-    height: 200px;
-    margin-top: 10%;
+.text {
+    width: 500px;
+    margin: auto;
+    display: inline-table;
+    padding: 10px;
 }
+
+.image {
+    margin: auto;
+    display: inline-table;
+    padding: 10px;
+}
+
+.image > img {
+    width: 500px;
+    height: 200px;
+}
+
 
 h2, p {
     color: #3b66fd;
