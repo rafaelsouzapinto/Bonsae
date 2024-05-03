@@ -1,5 +1,14 @@
-@@ -45,10 +45,33 @@ header {
-    justify-content: center;   
+header {
+    justify-content: center;  
+}
+
+.links  {
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    text-align: center; /* Alinha o texto no centro do link */
+    margin-right: 200px;
 }
 
 aside {
@@ -33,11 +42,12 @@ aside {
     min-width: 350px;
     max-width: 1300px;
     margin: auto;
-@@ -77,4 +100,52 @@ h2, p {
+h2, p {
     color: #3b66fd;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
 }
+
 }
 .carousel {
     width: 100%;
