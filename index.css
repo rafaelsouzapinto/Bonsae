@@ -1,0 +1,225 @@
+Simg.wp-smiley,
+img.emoji {
+    display: inline;
+    border: none;
+    box-shadow: none;
+    height: 1em;
+    width: 1em;
+    margin: 0 0.07em;
+    vertical-align: -0.1em;
+    background: none;
+    padding: 0;
+}
+
+.safe-svg-cover {
+    text-align: center;
+}
+
+.safe-svg-cover .safe-svg-inside {
+    display: inline-block;
+    max-width: 100%;
+}
+
+.safe-svg-cover svg {
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+}
+
+.wp-block-button__link,
+.wp-block-file__button {
+    color: #fff;
+    background-color: #32373c;
+    border-radius: 9999px;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+body {
+    --wp--preset--color--black: #000000;
+    --wp--preset--color--cyan-bluish-gray: #abb8c3;
+    --wp--preset--color--white: #ffffff;
+    --wp--preset--color--pale-pink: #f78da7;
+    --wp--preset--color--vivid-red: #cf2e2e;
+    --wp--preset--color--luminous-vivid-orange: #ff6900;
+    --wp--preset--color--luminous-vivid-amber: #fcb900;
+    --wp--preset--color--light-green-cyan: #7bdcb5;
+    --wp--preset--color--vivid-green-cyan: #00d084;
+    --wp--preset--color--pale-cyan-blue: #8ed1fc;
+    --wp--preset--color--vivid-cyan-blue: #0693e3;
+    --wp--preset--color--vivid-purple: #9b51e0;
+    --wp--preset--font-size--small: 13px;
+    --wp--preset--font-size--medium: 20px;
+    --wp--preset--font-size--large: 36px;
+    --wp--preset--font-size--x-large: 42px;
+}
+
+/* ... outras variáveis */
+
+.wp-block-pullquote {
+    font-size: 1.5em;
+    line-height: 1.6;
+}
+
+.elementor-heading-title {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.elementor-widget-heading .elementor-heading-title.elementor-size-small {
+    font-size: 15px;
+}
+
+.elementor-widget-heading .elementor-heading-title.elementor-size-medium {
+    font-size: 19px;
+}
+
+.elementor-widget-heading .elementor-heading-title.elementor-size-large {
+    font-size: 29px;
+}
+
+.elementor-widget-heading .elementor-heading-title.elementor-size-xl {
+    font-size: 39px;
+}
+
+.elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
+    font-size: 59px;
+}
+
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
+    background-color: #69727d;
+    color: #fff;
+}
+
+.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
+    color: #69727d;
+    border: 3px solid;
+    background-color: transparent;
+}
+
+.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
+    margin-top: 8px;
+}
+
+.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
+    width: 1em;
+    height: 1em;
+}
+
+.elementor-widget-text-editor .elementor-drop-cap {
+    float: left;
+    text-align: center;
+    line-height: 1;
+    font-size: 50px;
+}
+
+.elementor-widget-text-editor .elementor-drop-cap-letter {
+    display: inline-block;
+}
+
+.elementor-widget-video .elementor-widget-container {
+    overflow: hidden;
+    transform: translateZ(0);
+}
+
+.elementor-widget-video .elementor-wrapper {
+    aspect-ratio: var(--video-aspect-ratio);
+}
+
+.elementor-widget-video .elementor-wrapper iframe,
+.elementor-widget-video .elementor-wrapper video {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border: none;
+    background-color: #000;
+}
+
+@supports not (aspect-ratio: 1/1) {
+    .elementor-widget-video .elementor-wrapper {
+        position: relative;
+        overflow: hidden;
+        height: 0;
+        padding-bottom: calc(100% / var(--video-aspect-ratio));
+    }
+
+    .elementor-widget-video .elementor-wrapper iframe,
+    .elementor-widget-video .elementor-wrapper video {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+/* Estilo dos passos do formulário */
+.e-form__step {
+    width: 100%;
+}
+
+.e-form__step:not(.elementor-hidden) {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Estilo dos botões do formulário */
+.e-form__buttons,
+.e-form__buttons__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Estilo dos indicadores de progresso */
+.e-form__indicators {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 13px;
+    margin-bottom: var(--e-form-steps-indicators-spacing);
+}
+
+.e-form__indicators__indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 0;
+    padding: 0 var(--e-form-steps-divider-gap);
+}
+
+/* Estilo dos ícones dos indicadores */
+.e-form__indicators__indicator__icon,
+.e-form__indicators__indicator__number {
+    width: var(--e-form-steps-indicator-padding, 30px);
+    height: var(--e-form-steps-indicator-padding, 30px);
+    border-width: 1px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Estilo dos indicadores de progresso ativos, inativos e completos */
+.e-form__indicators__indicator--state-inactive {
+    color: var(--e-form-steps-indicator-inactive-primary-color, #c2cbd2);
+}
+
+.e-form__indicators__indicator--state-active {
+    color: var(--e-form-steps-indicator-active-primary-color, #39b54a);
+    border-color: var(--e-form-steps-indicator-active-secondary-color, #fff);
+}
+
+.e-form__indicators__indicator--state-completed {
+    color: var(--e-form-steps) 
+}
