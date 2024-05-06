@@ -10,23 +10,19 @@ img.emoji {
     background: none;
     padding: 0;
 }
-
 .safe-svg-cover {
     text-align: center;
 }
-
 .safe-svg-cover .safe-svg-inside {
     display: inline-block;
     max-width: 100%;
 }
-
 .safe-svg-cover svg {
     height: 100%;
     max-height: 100%;
     max-width: 100%;
     width: 100%;
 }
-
 .wp-block-button__link,
 .wp-block-file__button {
     color: #fff;
@@ -56,84 +52,67 @@ img.emoji {
 }
 
 /* ... outras variáveis */
-
 .wp-block-pullquote {
     font-size: 1.5em;
     line-height: 1.6;
 }
-
 .elementor-heading-title {
     padding: 0;
     margin: 0;
     line-height: 1;
 }
-
 .elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {
     color: inherit;
     font-size: inherit;
     line-height: inherit;
 }
-
 .elementor-widget-heading .elementor-heading-title.elementor-size-small {
     font-size: 15px;
 }
-
 .elementor-widget-heading .elementor-heading-title.elementor-size-medium {
     font-size: 19px;
 }
-
 .elementor-widget-heading .elementor-heading-title.elementor-size-large {
     font-size: 29px;
 }
-
 .elementor-widget-heading .elementor-heading-title.elementor-size-xl {
     font-size: 39px;
 }
-
 .elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
     font-size: 59px;
 }
-
 .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
     background-color: #69727d;
     color: #fff;
 }
-
 .elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
     color: #69727d;
     border: 3px solid;
     background-color: transparent;
 }
-
 .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
     margin-top: 8px;
 }
-
 .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
     width: 1em;
     height: 1em;
 }
-
 .elementor-widget-text-editor .elementor-drop-cap {
     float: left;
     text-align: center;
     line-height: 1;
     font-size: 50px;
 }
-
 .elementor-widget-text-editor .elementor-drop-cap-letter {
     display: inline-block;
 }
-
 .elementor-widget-video .elementor-widget-container {
     overflow: hidden;
     transform: translateZ(0);
 }
-
 .elementor-widget-video .elementor-wrapper {
     aspect-ratio: var(--video-aspect-ratio);
 }
-
 .elementor-widget-video .elementor-wrapper iframe,
 .elementor-widget-video .elementor-wrapper video {
     height: 100%;
@@ -142,7 +121,6 @@ img.emoji {
     border: none;
     background-color: #000;
 }
-
 @supports not (aspect-ratio: 1/1) {
     .elementor-widget-video .elementor-wrapper {
         position: relative;
@@ -150,7 +128,6 @@ img.emoji {
         height: 0;
         padding-bottom: calc(100% / var(--video-aspect-ratio));
     }
-
     .elementor-widget-video .elementor-wrapper iframe,
     .elementor-widget-video .elementor-wrapper video {
         position: absolute;
@@ -165,7 +142,6 @@ img.emoji {
 .e-form__step {
     width: 100%;
 }
-
 .e-form__step:not(.elementor-hidden) {
     display: flex;
     flex-wrap: wrap;
@@ -187,7 +163,6 @@ img.emoji {
     font-size: 13px;
     margin-bottom: var(--e-form-steps-indicators-spacing);
 }
-
 .e-form__indicators__indicator {
     display: flex;
     flex-direction: column;
@@ -214,12 +189,10 @@ img.emoji {
 .e-form__indicators__indicator--state-inactive {
     color: var(--e-form-steps-indicator-inactive-primary-color, #c2cbd2);
 }
-
 .e-form__indicators__indicator--state-active {
     color: var(--e-form-steps-indicator-active-primary-color, #39b54a);
     border-color: var(--e-form-steps-indicator-active-secondary-color, #fff);
 }
-
 .e-form__indicators__indicator--state-completed {
     color: var(--e-form-steps) 
 }
