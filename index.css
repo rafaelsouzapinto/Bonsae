@@ -36,7 +36,7 @@ img.emoji {
     text-decoration: none;
 }
 
-body {
+:root {
     --wp--preset--color--black: #000000;
     --wp--preset--color--cyan-bluish-gray: #abb8c3;
     --wp--preset--color--white: #ffffff;
