@@ -25,7 +25,7 @@ nav {
     align-items: center;
     padding: 20px;
     background-color: #f0f0f0;
-    font-family:var(--fonte-padrao)
+    font-family:var(--fonte-padrao);
 }
 #img-logo {
     width: 100px;
@@ -40,6 +40,10 @@ nav {
 #links a:hover {
     color: var(--wp--preset--color--vivid-cyan-blue);
     text-decoration: underline;
+    font-size: 1.1em;
+    color: var(--cor-azul01);
+    transition: .5s;
+    font-weight: bold;
 }
 .botao a > h1 {
     font-size: 18px;
@@ -47,9 +51,14 @@ nav {
     background-color:var(--cor-azul01);
     color: #fff;
     padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
     border-radius: 20px;
+    text-decoration: underline;
+}
+.botao a>h1:hover {
+    background-color: var(--cor-azul02);
+    border-radius: 20px;
+    transition: .5s;
+    font-size: 20px;
 }
 
 /* Plataforma*/
@@ -173,5 +182,5 @@ footer {
     margin-top: 20px;
     height: 200px;
     background-image: linear-gradient(to right, #0167FF, #013E99 );
+    text-align: center;
 }
-
