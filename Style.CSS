@@ -1,9 +1,6 @@
 header {
     justify-content: center;  
 }
-body {
-    background-color: #3b66fd;
-}
 
 .links  {
     text-align: center;
@@ -11,7 +8,8 @@ body {
 }
 
 .links a {
-    padding: 10px 20px;
+    margin-left: 60px;
+    padding: 65px 60px;
     text-decoration: none;
 }
 
