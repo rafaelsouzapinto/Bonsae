@@ -1,14 +1,18 @@
 header {
     justify-content: center;  
 }
+body {
+    background-color: #3b66fd;
+}
 
 .links  {
-    width: 100%;
-    display: inline-block;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.links a {
+    padding: 10px 20px;
     text-decoration: none;
-    color: #000;
-    text-align: center; /* Alinha o texto no centro do link */
-    margin-right: 200px;
 }
 
 aside {
