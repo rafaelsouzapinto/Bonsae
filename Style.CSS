@@ -128,23 +128,44 @@ h2, p {
 #introducao {
     background: #000;
     padding: 30px;
-    height: 250px;
+    height: 400px;
     font-family:var(--fonte-padrao);
     font-size: 1 .5em;
 }
+#section{
+    display: block;
+}
+#img-pc {
+    display: block;
+}
+#img-pc > img {
+    height: 250px;
+    width: auto;
+}
+
+
+
+
 
 .parallax {
     /* A imagem que você deseja usar como fundo */
-    background: linear-gradient(#051B3B, #000);
+    background: linear-gradient(#092d63, #000);
     /* Altura específica para a div parallax */
-    min-height: 800px;
+    min-height: 500px;
     /* Cria o efeito parallax */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     font-family:var(--fonte-padrao);
+}
 
+#conteudo-parallax {
+    max-width: 800px;
+    text-align: justify;
+    display: block;
+    margin: auto;
+    padding: 20px;
 }
 
 
