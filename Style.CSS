@@ -131,7 +131,7 @@ header > h1 {
 
 /* sessões e parallax*/
 h2, p {
-    color: #3b66fd;
+    color: white;
     font-family: var(--fonte-padrao);
     font-size: 20px;
 }
@@ -139,18 +139,29 @@ h2, p {
     background: #000;
     height: 450px;
     font-family:var(--fonte-padrao);
-    font-size: 1 .5em;
+    font-size: 2.0em;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#section{
+#conteudo-introducao {
+    max-width: 600px;
+    padding: 20px;
     display: block;
+    text-align: justify;
 }
-#img-pc {
-    display: block;
+#conteudo-introducao > h2 {
+    text-align: center;
+    padding: 5px;
+    font-size: 1.1em;
 }
-#img-pc > img {
-    height: 250px;
-    width: auto;
+#section {
+    display: flex;
+    align-items:center;
 }
+
 
 
 .parallax {
@@ -164,13 +175,23 @@ h2, p {
     background-repeat: no-repeat;
     background-size: cover;
     font-family:var(--fonte-padrao);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
 #conteudo-parallax {
-    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#texto-parallax {
+    max-width: 450px;
     text-align: justify;
+    padding: 20px;
     display: block;
-    margin: auto;
+}
+div.exterior-video {
+    width: 660px;
     padding: 20px;
 }
 
@@ -183,13 +204,18 @@ h2, p {
     align-items: center;
     padding: 20px;
 }
-
 #plataforma > p {
     max-width: 450px;
     padding-right: 20px;
     text-align: justify;
 }
-
+#img-pc {
+    display: block;
+}
+#img-pc > img {
+    height: 250px;
+    width: auto;
+}
 
 /*funcionalidades*/
 #funcionalidades {
@@ -200,10 +226,11 @@ h2, p {
     color: var(--cor-azul02);
     text-align: center;
 }
-#funcionalidades > h1 {
+#funcionalidades > h2 {
     display: inline-block;
     padding: 20px;
     font-size:2em;
+    color: var(--cor-azul02);
 }
 #funcionalidades > ul {
     columns: 2;
@@ -216,7 +243,6 @@ h2, p {
 #botao-funcionalidades {
     display: inline-block;
     padding: 20px;
-
 }
 
 
