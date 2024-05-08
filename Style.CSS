@@ -20,7 +20,9 @@
     --fonte-padrao: "Nunito", sans-serif;
 }
 
-/* menu */
+body {
+    background-color: #e7f5ff;
+}
 nav {
     justify-content: center;
     align-items: center;
@@ -223,12 +225,7 @@ div.exterior-video {
 
 /* Sessão 2 */
 #plataforma {
-    background: linear-gradient(var(--cor-azul02), #000);
     min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
     display: flex;
     justify-content: center;
@@ -241,9 +238,11 @@ div.exterior-video {
 #texto-plataforma > h2 {
     font-size: 3em;
     padding-bottom: 20px;
+    color: var(--cor-azul02);
 }
 #texto-plataforma > p {
     padding-right: 20px;
+    color: var(--cor-azul02);
 }
 #img-pc {
     display: block;
@@ -253,6 +252,16 @@ div.exterior-video {
     width: auto;
 }
 
+/* Conteudos */
+#conteudos {
+    min-width: none;
+    max-width: 1000px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin: auto;
+    box-shadow: 2px 1px 10px #02153070;
+}
 
 /*funcionalidades*/
 #funcionalidades {
@@ -262,6 +271,7 @@ div.exterior-video {
     font-family: var(--fonte-padrao);
     color: var(--cor-azul02);
     text-align: center;
+    padding: 50px;
 }
 #funcionalidades > h2 {
     display: inline-block;
@@ -329,7 +339,6 @@ footer {
 
 #finalizacao {
     display: flex;
-    align-items: center;
     justify-content:space-around;
 }
 #finalizacao > p {
