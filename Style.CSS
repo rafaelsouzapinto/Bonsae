@@ -275,11 +275,53 @@ div.exterior-video {
 /* rodapé */
 footer {
     margin-top: 20px;
-    height: 200px;
+    max-height: 500px;
     background-image: linear-gradient(to right, #0167FF, #013E99 );
     padding: 20px;
 }
+#topo-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+#topo-rodape > img {
+    width: 150px;
+    height: auto;
+}
+
+#meio-rodape {
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    margin: auto;
+    padding: 50px;
+}
+#texto-rodape {
+   max-width: 450px;
+}
+#email {
+    border-radius: 50px;
+    background-color: #013E99;
+    padding: 5px;
+}
+#email > input {
+    border: none;
+    width: 300px;
+    height: 30px;
+    border-radius: 50px;
+    padding: 5px;
+}
 
 #finalizacao {
-    display:block;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
 }
+#finalizacao > p {
+    font-size: var(--font-size--small);
+}
+
+
+
