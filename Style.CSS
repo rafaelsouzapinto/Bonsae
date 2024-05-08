@@ -5,8 +5,10 @@
 }
 
 :root {
+    --cor-azul00: #0C479D;
     --cor-azul01: #1f42be;
     --cor-azul02: #0167ff;
+
     --cor-preto01: #1e1e1e;
     --cor-preto02: #000;
 
@@ -54,14 +56,13 @@ nav {
     transition: .5s;
     font-weight: bold;
 }
-
 .botao a > h1 {
     font-size: 18px;
     font-family: var(--fonte-padrao);
     background-color:var(--cor-azul02);
     color: #fff;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 0px 20px;
     text-decoration: underline;
 }
 .botao a>h1:hover {
@@ -129,11 +130,22 @@ header > h1 {
     display: block;
 }
 
-/* sessões e parallax*/
+/* sessão 1 */
 h2, p {
     color: white;
     font-family: var(--fonte-padrao);
     font-size: 20px;
+}
+.saiba-mais {    
+    color: var(--cor-azul00);
+    text-decoration: none;
+}
+.saiba-mais > p {
+    color: var(--cor-azul00);
+    padding-top: 10px;
+}
+.saiba-mais:hover {
+    text-decoration: underline;
 }
 #introducao {
     background: #000;
@@ -153,28 +165,33 @@ h2, p {
     text-align: justify;
 }
 #conteudo-introducao > h2 {
-    text-align: center;
-    padding: 5px;
-    font-size: 1.1em;
+    font-size: 1.5em;
+    text-align: left;
+    line-height: 1.2em;
+    padding-bottom: 5px;
 }
 #section {
     display: flex;
     align-items:center;
 }
 
+#botao-introducao {
+    padding: 10px;
+}
 
-
+/* Parallax */
 .parallax {
     /* A imagem que você deseja usar como fundo */
-    background: linear-gradient(#092d63, #000);
+    background: linear-gradient(#0C479D, #000);
     /* Altura específica para a div parallax */
-    min-height: 500px;
+    min-height: 700px;
     /* Cria o efeito parallax */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     font-family:var(--fonte-padrao);
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -184,18 +201,25 @@ h2, p {
     justify-content: center;
     align-items: center;
 }
-#texto-parallax {
+#lista-parallax {
+    color: #fff;
     max-width: 450px;
     text-align: justify;
     padding: 20px;
     display: block;
+    font-size: 1.2em;
 }
+#lista-parallax > h2{
+    font-size: 1.2em;
+    padding: 10px;
+}
+
 div.exterior-video {
     width: 660px;
     padding: 20px;
 }
 
-
+/* Sessão 2 */
 #plataforma {
     background-color: #000;
     height: 450px;
@@ -217,9 +241,10 @@ div.exterior-video {
     width: auto;
 }
 
+
 /*funcionalidades*/
 #funcionalidades {
-    max-height: 500px;
+    max-height: 550px;
     max-width: 1000px;
     margin: auto;
     font-family: var(--fonte-padrao);
@@ -235,6 +260,7 @@ div.exterior-video {
 #funcionalidades > ul {
     columns: 2;
     color: var(--cor-azul02);
+    text-align: left;
 }
 #funcionalidades > ul > li {
     padding: 5px;
@@ -251,6 +277,9 @@ footer {
     margin-top: 20px;
     height: 200px;
     background-image: linear-gradient(to right, #0167FF, #013E99 );
-    text-align: center;
     padding: 20px;
+}
+
+#finalizacao {
+    display:block;
 }
