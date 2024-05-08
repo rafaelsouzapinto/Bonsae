@@ -20,15 +20,22 @@
 
 /* menu */
 nav {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #f0f0f0;
+}
+#menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 5px;
     background-color: #f0f0f0;
     font-family:var(--fonte-padrao);
+    width: 1100px;
 }
 #img-logo {
-    width: 100px;
+    width: 120px;
     height: auto;
     padding: 10px;
 }
@@ -36,19 +43,22 @@ nav {
     text-decoration: none;
     color: #333;
     margin-right: 20px;
+    padding: 10px;
+    display: inline-block;
+
 }
 #links a:hover {
     color: var(--wp--preset--color--vivid-cyan-blue);
     text-decoration: underline;
-    font-size: 1.1em;
     color: var(--cor-azul01);
     transition: .5s;
     font-weight: bold;
 }
+
 .botao a > h1 {
     font-size: 18px;
     font-family: var(--fonte-padrao);
-    background-color:var(--cor-azul01);
+    background-color:var(--cor-azul02);
     color: #fff;
     padding: 10px 20px;
     border-radius: 20px;
@@ -127,8 +137,7 @@ h2, p {
 }
 #introducao {
     background: #000;
-    padding: 30px;
-    height: 400px;
+    height: 450px;
     font-family:var(--fonte-padrao);
     font-size: 1 .5em;
 }
@@ -142,9 +151,6 @@ h2, p {
     height: 250px;
     width: auto;
 }
-
-
-
 
 
 .parallax {
@@ -169,9 +175,25 @@ h2, p {
 }
 
 
+#plataforma {
+    background-color: #000;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#plataforma > p {
+    max-width: 450px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+
 /*funcionalidades*/
 #funcionalidades {
-    height: 350px;
+    max-height: 500px;
     max-width: 1000px;
     margin: auto;
     font-family: var(--fonte-padrao);
@@ -204,4 +226,5 @@ footer {
     height: 200px;
     background-image: linear-gradient(to right, #0167FF, #013E99 );
     text-align: center;
+    padding: 20px;
 }
