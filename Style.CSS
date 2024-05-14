@@ -315,6 +315,21 @@ div.exterior-video {
     background-color: #fff;
     margin: auto;
     box-shadow: 2px 1px 10px #02153070;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.texto-conteudos {
+    width: 450px;
+    height: 450px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.texto-conteudos > h2 {
+    color: var(--cor-azul02);
+    font-size: 2em;
 }
 
 /*funcionalidades*/
@@ -343,6 +358,7 @@ div.exterior-video {
     font-weight: bold;
     font-size: 1.2em;
 }
+
 .button {
     line-height: 1;
     text-decoration: none;
@@ -360,8 +376,7 @@ div.exterior-video {
     text-overflow: ellipsis;
     transition: background-color .3s;
   }
-  
-  .button__icon-wrapper {
+.button__icon-wrapper {
     flex-shrink: 0;
     width: 20px; /* Reduz o tamanho do contêiner do ícone */
     height: 20px; /* Reduz o tamanho do contêiner do ícone */
@@ -373,26 +388,21 @@ div.exterior-video {
     place-items: center;
     overflow: hidden;
   }
-  
-  .button:hover {
+.button:hover {
     background-color: #000;
   }
-  
-  .button:hover .button__icon-wrapper {
+.button:hover .button__icon-wrapper {
     color: #000;
   }
-  
   .button__icon-svg--copy {
     position: absolute;
     transform: translate(-150%, 150%);
   }
-  
-  .button:hover .button__icon-svg:first-child {
+.button:hover .button__icon-svg:first-child {
     transition: transform .3s ease-in-out;
     transform: translate(150%, -150%);
   }
-  
-  .button:hover .button__icon-svg--copy {
+.button:hover .button__icon-svg--copy {
     transition: transform .3s ease-in-out .1s;
     transform: translate(0);
   }
@@ -432,11 +442,11 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
   .example-2 .icon-content {
     margin: 0 10px;
     position: relative;
-  }
+}
   .example-2 .icon-content .tooltip {
     position: absolute;
     top: -30px;
@@ -449,13 +459,13 @@ footer {
     visibility: hidden;
     font-size: 14px;
     transition: all 0.3s ease;
-  }
-  .example-2 .icon-content:hover .tooltip {
+}
+.example-2 .icon-content:hover .tooltip {
     opacity: 1;
     visibility: visible;
     top: -50px;
-  }
-  .example-2 .icon-content a {
+}
+.example-2 .icon-content a {
     position: relative;
     overflow: hidden;
     display: flex;
@@ -467,20 +477,20 @@ footer {
     color: #4d4d4d;
     background-color: #fff;
     transition: all 0.3s ease-in-out;
-  }
-  .example-2 .icon-content a:hover {
+}
+.example-2 .icon-content a:hover {
     box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
-  }
-  .example-2 .icon-content a svg {
+}
+.example-2 .icon-content a svg {
     position: relative;
     z-index: 1;
     width: 30px;
     height: 30px;
-  }
-  .example-2 .icon-content a:hover {
+}
+.example-2 .icon-content a:hover {
     color: white;
-  }
-  .example-2 .icon-content a .filled {
+}
+.example-2 .icon-content a .filled {
     position: absolute;
     top: auto;
     bottom: 0;
@@ -489,26 +499,26 @@ footer {
     height: 0;
     background-color: #000;
     transition: all 0.3s ease-in-out;
-  }
-  .example-2 .icon-content a:hover .filled {
+}
+.example-2 .icon-content a:hover .filled {
     height: 100%;
-  }
-  .example-2 .icon-content a[data-social="instagram"] .filled,
-  .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+}
+.example-2 .icon-content a[data-social="instagram"] .filled,
+.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
     background: linear-gradient(
-      45deg,
-      #405de6,
-      #5b51db,
-      #b33ab4,
-      #c135b4,
-      #e1306c,
-      #fd1f1f
-    );
-  }
-  .example-2 .icon-content a[data-social="youtube"] .filled,
-  .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+        45deg,
+        #405de6,
+        #5b51db,
+        #b33ab4,
+        #c135b4,
+        #e1306c,
+        #fd1f1f
+);
+}
+.example-2 .icon-content a[data-social="youtube"] .filled,
+.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
     background-color: #ff0000;
-  } 
+} 
 
 #meio-rodape {
     max-width: 800px;
