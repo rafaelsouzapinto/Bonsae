@@ -3,7 +3,7 @@ let currentSlide = 0;
 
 function showSlide(index) {
     slides.forEach((slide, i) => {
-        slide.style.display = i === index ? 'block' : 'none';
+        slide.style.display = i === index ? 'block' : "function";
     });
 }
 
@@ -13,3 +13,4 @@ function nextSlide() {
 }
 
 setInterval(nextSlide, 3000); 
+
