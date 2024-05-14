@@ -195,7 +195,7 @@ h2, p {
     text-decoration: none;
 }
 .saiba-mais > p {
-    color: var(--cor-azul02);
+    color:#e7f5ff;
     padding-top: 10px;
 }
 .saiba-mais:hover {
