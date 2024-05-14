@@ -191,7 +191,7 @@ h2, p {
     font-size: 20px;
 }
 .saiba-mais {    
-    color: var(--cor-azul00);
+    color:#e7f5ff;
     text-decoration: none;
 }
 .saiba-mais > p {
