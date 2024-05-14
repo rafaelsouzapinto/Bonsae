@@ -367,6 +367,20 @@ footer {
     height: auto;
 }
 
+.redes-sociais {
+    display: flex;
+    flex-direction: column; /* Alinha os links um abaixo do outro */
+    align-items: flex-end; /* Alinha os links à direita */
+}
+.redes-sociais a {
+    text-decoration: none;
+    font-family: var(--fonte-padrao);
+    color: #fff; /* Cor dos links */
+}
+.redes-sociais a:hover {
+    text-decoration: underline;
+}
+
 #meio-rodape {
     max-width: 800px;
     display: flex;
