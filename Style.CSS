@@ -343,10 +343,59 @@ div.exterior-video {
     font-weight: bold;
     font-size: 1.2em;
 }
-#botao-funcionalidades {
-    display: inline-block;
-    padding: 20px;
-}
+.button {
+    line-height: 1;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem; /* Reduz o espaçamento entre o ícone e o texto */
+    background-color: var(--clr);
+    color: #fff;
+    border-radius: 10rem;
+    font-weight: 600;
+    padding: .75rem 1.25rem; /* Reduz o padding vertical e horizontal */
+    padding-left: 25px; /* Ajusta o padding à esquerda para acomodar o ícone */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color .3s;
+  }
+  
+  .button__icon-wrapper {
+    flex-shrink: 0;
+    width: 20px; /* Reduz o tamanho do contêiner do ícone */
+    height: 20px; /* Reduz o tamanho do contêiner do ícone */
+    position: relative;
+    color: var(--clr);
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+  
+  .button:hover {
+    background-color: #000;
+  }
+  
+  .button:hover .button__icon-wrapper {
+    color: #000;
+  }
+  
+  .button__icon-svg--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+  }
+  
+  .button:hover .button__icon-svg:first-child {
+    transition: transform .3s ease-in-out;
+    transform: translate(150%, -150%);
+  }
+  
+  .button:hover .button__icon-svg--copy {
+    transition: transform .3s ease-in-out .1s;
+    transform: translate(0);
+  }
 
 
 /* rodapé */
