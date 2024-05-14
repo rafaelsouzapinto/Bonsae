@@ -556,7 +556,7 @@ font-family: var(--fonte-padrao);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 .subscribe-button:hover {
-    background-color: #535353;
+    background-color: #0167ff;
     text-decoration: underline;
     transition: .5s;
 }
