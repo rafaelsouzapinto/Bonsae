@@ -119,14 +119,14 @@ header > h1 {
 }
 
 .card > .row {
-    color: white;
+    color: #000;
     display: flex;
     flex-wrap: nowrap;
 }
 
 .card > .row > .icon {
-    background: #223;
-    color: white;
+    background: #0167ff;
+    color: #fff;
     border-radius: 50%;
     width: 50px;
     display: flex;
@@ -149,13 +149,14 @@ header > h1 {
 }
 
 .description p {
-    color: #b0b0ba;
+    color: #fff;
     padding-top: 5px;
 }
 
 .description h4 {
     text-transform: uppercase;
     font-family: var(--fonte-padrao);
+    color: #fff;
 }
 
 .container > input {
@@ -172,16 +173,16 @@ input:checked + label .description {
 }
 
 .card[for="c1"] {
-    background-image: url('./img1.jpeg');
+    background-image: url('telab1.png');
 }
 .card[for="c2"] {
-    background-image: url('./img2.jpeg');
+    background-image: url('imgb1.png');
 }
 .card[for="c3"] {
-    background-image: url('./img3.jpeg');
+    background-image: url('telab2.png');
 }
 .card[for="c4"] {
-    background-image: url('./img4.jpeg');
+    background-image: url(''imgb2.png'');
 }
 
 /* sessão 1 */
