@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
-	<!-- Configuração media query -->
     <title>Plataforma - Bonsae®</title>
     <link rel="stylesheet" href="Style.CSS">
     <script src="script.js" defer></script>
@@ -83,7 +82,7 @@
                 </label>
             </div>
         </div>
-        </main>
+   
         <section id="introducao">
             <div id="section">
                 <div id="conteudo-introducao">
@@ -127,36 +126,46 @@
             <div id="img-pc">
                 <picture>
                     <source media="(max-width: 600)" srcset="images/computador-bonsae-393x150.png">
-                <img src="images/computador-bonsae-655x250.png" alt="interface-bonsae">    
+                <img src="images/computador-bonsae-603x230.png" alt="interface-bonsae">    
                 </picture>
                 
             </div>
         </section>
-
+        <h1 id="titulo-cont">Conteúdos</h1>
         <section id="conteudos">
-            <div id="blog" class="texto-conteudos">
-                <h2>Blog</h2>
-            </div>
-            <div id="book" class="texto-conteudos">
-                <h2>E-Books</h2>
-            </div>
+            
+            <a href="https://bonsae.estudepontuei.com/blog/">
+                <div id="blog" class="texto-conteudos">
+                    <h2>blog</h2>
+                    <div class="cont">Confira as nossas últimas produções sobre o mundo jurídico.</div>
+                </div>
+            </a>
+            <a href="https://bonsae.estudepontuei.com/e-books/">
+                <div id="ebooks" class="texto-conteudos">
+                    <h2>ebooks</h2>
+                    <div class="cont"> Guias completos e gratuitos</div>
+                </div>
+            </a>
         </section>
 
         <section id="funcionalidades">
             <h2>Funcionalidades</h2>
-            <ul type="circle">
-                <li>Integração plena com a IES</li>
-                <li>Suporte 24h (BonsaeDroid)</li>
-                <li>Biblioteca de Práticas Multimídia​</li>
-                <li>Sistema de contabilização de horas</li>
-                <li>Segue as recomendações da Autoridade Nacional de Proteção de Dados (ANPD)</li>
-                 
-                <li>Plataforma desenvolvida de acordo com as DCNs do MEC</li>
-                <li>Diagnósticos e relatórios personalizados</li>
-                <li>Gestão e virtualização completa de NPJs</li>
-                <li>Gestão acadêmica completa do curso de Direito</li>
-                <li>Múltiplos níveis de permissão de usuário</li>
-            </ul><br>
+            <div id="lista-func">
+                <ul class="itens-func">
+                    <li>Integração plena com a IES</li>
+                    <li>Suporte 24h (BonsaeDroid)</li>
+                    <li>Biblioteca de Práticas Multimídia​</li>
+                    <li>Sistema de contabilização de horas</li>
+                    <li>Segue as recomendações da Autoridade Nacional de Proteção de Dados (ANPD)</li>
+                </ul>
+                <ul class="itens-func">
+                    <li>Plataforma desenvolvida de acordo com as DCNs do MEC</li>
+                    <li>Diagnósticos e relatórios personalizados</li>
+                    <li>Gestão e virtualização completa de NPJs</li>
+                    <li>Gestão acadêmica completa do curso de Direito</li>
+                    <li>Múltiplos níveis de permissão de usuário</li>
+                </ul>
+            </div><br>
             <a style="--clr: #0054FF" class="button" href="https://bonsae.estudepontuei.com/demonstracao/" target="_blank">
                 <span class="button__icon-wrapper">
                     <svg width="10" class="button__icon-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 15">
@@ -170,8 +179,6 @@
             </a>
         </section>
     </main>
-   
-
     <footer>
         <div id="topo-rodape">
             <img src="images/logo-branca-bonsae.png" alt="bonsae-logo-branca">
