@@ -2,6 +2,7 @@
 
 * {
     margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -73,7 +74,6 @@ nav {
 }
 
 /* scroll-bar */
-
 ::-webkit-scrollbar{
     width: 15px;
 }
@@ -139,7 +139,7 @@ header > h1 {
 }
 
 .card > .row > .icon {
-    background: ##00000079;
+    background: #00000079;
     color: #fff;
     border-radius: 50%;
     width: 50px;
@@ -165,7 +165,7 @@ header > h1 {
 
 .description p {
     color: #fff;
-    padding-top: 5px;
+    padding: 5px 3px 3px 0px;
 }
 
 .description h4 {
@@ -188,16 +188,16 @@ input:checked + label .description {
 }
 
 .card[for="c1"] {
-    background-image: url('telab1.png');
+    background-image: url(images/telab1.png);
 }
 .card[for="c2"] {
-    background-image: url('imgb1.png');
+    background-image: url(images/imgb1.png);
 }
 .card[for="c3"] {
-    background-image: url('telab2.png');
+    background-image: url(images/telab2.png);
 }
 .card[for="c4"] {
-    background-image: url(''imgb2.png'');
+    background-image: url(images/imgb2.png);
 }
 
 /* sessão 1 */
