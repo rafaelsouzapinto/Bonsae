@@ -318,11 +318,11 @@ div.exterior-video {
 
 /* Conteudos */
 #titulo-cont {
-    background-color: #fff;
     font-family: var(--fonte-padrao);
     text-align: center;
     color: #0167ff;
     padding-top: 10px;
+    font-size: 3em;
 }
 #conteudos {
     min-height: 550px;
@@ -332,7 +332,6 @@ div.exterior-video {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #fff;
     padding-bottom: 10px;
 }
 .texto-conteudos {
@@ -341,9 +340,9 @@ div.exterior-video {
     border-radius: 20px;
     text-align: center;
     transition: 0.2s ease, color 0.2s ease;
-    background-color: #e7f5ff;
+    background-color: #fff;
     box-shadow: 0px 0px 10px #06001b05;
-    border: 2px solid #0000001c;
+    border: 2px solid #00000010;
 }
 .texto-conteudos:hover {
     width: 505px;
