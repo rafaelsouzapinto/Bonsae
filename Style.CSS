@@ -69,7 +69,7 @@ nav {
     bottom: 0;
     width: 100%;
     height: 3px;
-    background-color: var(--cor-azul02);
+    background-color: var(--cor-azul00);
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
 }
@@ -478,7 +478,7 @@ div.exterior-video {
 /* rodapé */
 footer {
     margin-top: 20px;
-    max-height: 500px;
+    max-height: 600px;
     background-image: linear-gradient(to right, var(--cor-preto00), var(--cor-preto01));
     padding: 20px;
 }
@@ -497,6 +497,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    text-align: center;
+    width: 200px;
 }
 .redes-sociais a {
     text-decoration: none;
@@ -582,20 +584,26 @@ footer {
     font-family: var(--fonte-padrao);
 } 
 #meio-rodape {
-    max-width: 800px;
+    max-width: 900px;
     display: flex;
     align-items: center;
-    justify-content: space-between;    
+    justify-content: center;    
     margin: auto;
     padding: 50px;
+    flex-wrap: wrap;
 }
 #texto-rodape {
    max-width: 450px;
+   min-width: 250px;
+}
+
+#email {
+    padding: 10px;
 }
 .input {
     font-family: var(--fonte-padrao);
     font-weight: 500;
-    font-size: .9vw;
+    font-size: 14px;
     color: var(--cor-preto02);
     background-color: rgb(245, 245, 245);
     box-shadow: 0 0 .4vw rgba(0,0,0,0.5), 0 0 0 .15vw transparent;
@@ -603,7 +611,9 @@ footer {
     border: none;
     outline: none;
     padding: 0.4vw;
-    max-width: 250px;
+    max-width: 350px;
+    min-width: 300px;
+    height: 30px;
     transition: .4s;
   }
 .input:hover {
