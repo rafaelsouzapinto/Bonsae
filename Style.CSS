@@ -24,56 +24,58 @@
 body {
     background-color: #e7f5ff;
 }
+
+
 nav {
     justify-content: center;
     align-items: center;
     display: flex;
-    background-color: #f0f0f0;
+    background-color: #fff;
     position: fixed;
     width: 100vw;
+    border-bottom: 2px solid #00000018;
 }
 #menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    background-color: #f0f0f0;
+    background-color: #fff;
     font-family:var(--fonte-padrao);
     width: 1100px;
 }
+
 #img-logo {
     width: 120px;
     height: auto;
     padding: 10px;
 }
+
 #links a {
+    position: relative;
+    padding-bottom: 5px;
+    margin-right: 20px;
     text-decoration: none;
     color: #333;
-    margin-right: 20px;
-    padding: 10px;
-    display: inline-block;
+}
 
+#links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #0054FF; /* Cor da linha */
+    transform: scaleX(0); /* Inicialmente invisível */
+    transition: transform 0.3s ease-in-out;
 }
-#links a:hover {
-    text-decoration: underline;
-    color: var(--cor-azul01);
-    transition: .5s;
-    font-weight: bold;
+
+#links a:hover::after {
+    transform: scaleX(1); /* Mostra a linha ao passar o mouse */
 }
-.botao a > h1 {
-    font-size: 18px;
-    font-family: var(--fonte-padrao);
-    background-color:var(--cor-azul01);
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: underline;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    border-radius: 20px;
-}
-.botao a>h1:hover {
-    background-color: #000;
-    transition: .5s;
-}
+
+
 
 /* scroll-bar */
 ::-webkit-scrollbar{
