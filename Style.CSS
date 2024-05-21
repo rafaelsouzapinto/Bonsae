@@ -29,6 +29,8 @@ nav {
     align-items: center;
     display: flex;
     background-color: #f0f0f0;
+    position: fixed;
+    width: 100vw;
 }
 #menu {
     display: flex;
@@ -89,15 +91,16 @@ nav {
 /* Plataforma*/
 header {
     background-image: linear-gradient(to right, var(--cor-azul02), var(--cor-azul00));
-    height: 250px;
+    height: 340px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 header > h1 {
     color: white;
-    font-family:var(--fonte-padrao);
+    font-family: var(--fonte-padrao);
     font-weight: 400;
+    padding-top: 80px;
 }
 
 /* carrossel */
@@ -108,14 +111,12 @@ header > h1 {
     align-items: center;
     justify-content: center;
 }
-
 .container {
     height: 400px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
 }
-
 .card {
     width: 130px;
     background-size: cover;
@@ -127,16 +128,13 @@ header > h1 {
     align-items: flex-end;
     transition: .6s cubic-bezier(.28,-0.03,0,.99);
     box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
-
     background-color: var(--cor-azul00);
 }
-
 .card > .row {
     color: #000;
     display: flex;
     flex-wrap: nowrap;
 }
-
 .card > .row > .icon {
     background: #00000079;
     color: #fff;
@@ -148,7 +146,6 @@ header > h1 {
     margin: 15px;
     font-family: var(--fonte-padrao);
 }
-
 .card > .row > .description {
     display: flex;
     justify-content: center;
@@ -161,31 +158,25 @@ header > h1 {
     transition-delay: .3s;
     transition: all .3s ease;
 }
-
 .description p {
     color: #fff;
     padding: 5px 3px 3px 0px;
 }
-
 .description h4 {
     text-transform: uppercase;
     font-family: var(--fonte-padrao);
     color: #fff;
 }
-
 .container > input {
     display: none;
 }
-
 input:checked + label {
     width: 600px;
 }
-
 input:checked + label .description {
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
-
 .card[for="c1"] {
     background-image: url(images/telab1.png);
 }
@@ -198,6 +189,7 @@ input:checked + label .description {
 .card[for="c4"] {
     background-image: url(images/imgb2.png);
 }
+
 
 /* sessão 1 */
 h2, p {
@@ -243,6 +235,7 @@ h2, p {
     text-align: left;
     line-height: 1.2em;
     padding-bottom: 5px;
+    font-weight: normal;
 }
 #section {
     display: flex;
@@ -285,6 +278,10 @@ h2, p {
     font-size: 2em;
     padding: 10px;
     line-height: 1em;
+    font-weight: normal;
+}
+#lista-manifesto > ul {
+    list-style-position: inside;
 }
 
 div.exterior-video {
@@ -307,6 +304,7 @@ div.exterior-video {
     font-size: 3em;
     padding-bottom: 20px;
     color: var(--cor-azul02);
+    font-weight: normal;
 }
 #texto-plataforma > p {
     padding-right: 20px;
@@ -323,20 +321,22 @@ div.exterior-video {
     color: #0167ff;
     padding-top: 10px;
     font-size: 3em;
+    font-weight: normal;
 }
 #conteudos {
-    min-height: 550px;
+    max-width: 1070px;
+    min-height: 500px;
     max-height: 1000px;
     margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding-bottom: 10px;
 }
 .texto-conteudos {
-    width: 500px;
-    height: 500px;
+    width: 440px;
+    height: 440px;
     border-radius: 20px;
     text-align: center;
     transition: 0.2s ease, color 0.2s ease;
@@ -345,20 +345,23 @@ div.exterior-video {
     border: 2px solid #00000010;
 }
 .texto-conteudos:hover {
-    width: 505px;
-    height: 505px;
+    width: 450px;
+    height: 450px;
     transition: .2s;
     box-shadow: 0px 0px 10px #06001b25;
 }
 .texto-conteudos > h2 {
     color: var(--cor-azul02);
     font-size: 2.3em;
-    padding: 10px 10px 80px 10px;
+    padding: 10px;
+    font-weight: normal;
+    border-bottom: 2px solid #00000011;
 }
 #conteudos > a {
     text-decoration: none;
-    padding:10px;
+    padding: 10px;
 }
+
 .cont {
     font-family: var(--fonte-padrao);
     color: #fff;
@@ -368,13 +371,15 @@ div.exterior-video {
     align-items: center;
     justify-content: center;
     font-size: 1.6em;
+    padding: 0px 20px;
+    margin-top: 70px;
 }
 
 
 
 /*funcionalidades*/
 #funcionalidades {
-    max-height: 550px;
+    max-height: 700px;
     max-width: 1070px;
     margin: auto;
     font-family: var(--fonte-padrao);
@@ -387,6 +392,7 @@ div.exterior-video {
     padding: 20px;
     font-size:2.8em;
     color: var(--cor-azul02);
+    font-weight: normal;
 }
 #lista-func {
     display: flex;
@@ -405,7 +411,7 @@ div.exterior-video {
     list-style-type: circle;
 }
 #lista-func > ul > li {
-    padding: 5px 0px;
+    padding: 10px 0px;
 }
 
 .button {
@@ -419,7 +425,6 @@ div.exterior-video {
     border-radius: 10rem;
     font-weight: 600;
     padding: .75rem 1.25rem;
-    padding-left: 25px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -622,4 +627,55 @@ font-family: var(--fonte-padrao);
 }
 #finalizacao > p {
     font-size: var(--font-size--small);
+}
+
+
+/* Responsividade */
+@media screen and (max-width: 1104px) {
+    .container {
+        height: 350px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: start;
+    }
+    input:checked + label {
+        width: 410px;
+    }
+    .card {
+        width: 75px;
+        background-size: cover;
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 1rem;
+        margin: 0 10px;
+        display: flex;
+        align-items: flex-end;
+        transition: .6s cubic-bezier(.28,-0.03,0,.99);
+        box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+        background-color: var(--cor-azul00);
+    }
+    .card > .row > .icon {
+        background: #00000079;
+        color: #fff;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+        font-family: var(--fonte-padrao);
+    }
+    .card > .row > .description {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        height: 110px;
+        width: 320px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition-delay: .3s;
+        transition: all .3s ease;
+    }  
 }
