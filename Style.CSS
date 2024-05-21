@@ -7,11 +7,14 @@
 
 :root {
     --cor-azul00: #0C479D;
-    --cor-azul01: #1f42be;
-    --cor-azul02: #0167ff;
+    --cor-azul01: #548de3;
+    --cor-azul02: #1161d8;
 
-    --cor-preto01: #1e1e1e;
-    --cor-preto02: #000;
+    --cor-preto00: #333333;
+    --cor-preto01: #111111;
+    --cor-preto02: #000000;
+
+    --cor-fundo: #e7f5ff;
 
     --font-size--small: 13px;
     --font-size--medium: 20px;
@@ -22,7 +25,7 @@
 }
 
 body {
-    background-color: #e7f5ff;
+    background-color: var(--cor-fundo);
 }
 
 
@@ -56,7 +59,7 @@ nav {
     padding-bottom: 5px;
     margin-right: 20px;
     text-decoration: none;
-    color: #333;
+    color: var(--cor-preto00);
 }
 
 #links a::after {
@@ -65,16 +68,15 @@ nav {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 2px;
-    background-color: #0054FF; /* Cor da linha */
-    transform: scaleX(0); /* Inicialmente invisível */
+    height: 3px;
+    background-color: var(--cor-azul02);
+    transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
 }
 
 #links a:hover::after {
-    transform: scaleX(1); /* Mostra a linha ao passar o mouse */
+    transform: scaleX(1);
 }
-
 
 
 /* scroll-bar */
@@ -83,11 +85,11 @@ nav {
 }
 
 ::-webkit-scrollbar-track{
-    background: #000000;
+    background: var(--cor-preto01);
 }
 
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(#06001b, #0167ff, #06001b);
+    background: linear-gradient(var(--cor-preto01), var(--cor-azul02), var(--cor-preto01));
 }
 
 /* Plataforma*/
@@ -200,18 +202,18 @@ h2, p {
     font-size: 20px;
 }
 .saiba-mais {    
-    color:#e7f5ff;
+    color: var(--cor-fundo);
     text-decoration: none;
 }
 .saiba-mais > p {
-    color:#e7f5ff;
+    color: var(--cor-fundo);
     padding-top: 10px;
 }
 .saiba-mais:hover {
     text-decoration: underline;
 }
 #introducao {
-    background: linear-gradient(var(--cor-azul02), #000);
+    background: linear-gradient(var(--cor-azul02), var(--cor-preto01));
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -249,7 +251,7 @@ h2, p {
 
 /* manifesto */
 .manifesto {
-    background: linear-gradient(var(--cor-azul02), #000);
+    background: linear-gradient(var(--cor-azul02), var(--cor-preto01));
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -312,17 +314,23 @@ div.exterior-video {
     padding-right: 20px;
     color: var(--cor-azul02);
 }
-#img-pc {
-    display: block;
-}
 
 /* Conteudos */
+#cont-container {
+    background: linear-gradient(var(--cor-azul02), var(--cor-preto01));
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #titulo-cont {
     font-family: var(--fonte-padrao);
     text-align: center;
-    color: #0167ff;
+    color: #fff;
     padding-top: 10px;
-    font-size: 3em;
+    font-size: 2.9em;
     font-weight: normal;
 }
 #conteudos {
@@ -343,14 +351,13 @@ div.exterior-video {
     text-align: center;
     transition: 0.2s ease, color 0.2s ease;
     background-color: #fff;
-    box-shadow: 0px 0px 10px #06001b05;
-    border: 2px solid #00000010;
+    box-shadow: 0px 0px 20px #06001b56;
 }
 .texto-conteudos:hover {
     width: 450px;
     height: 450px;
     transition: .2s;
-    box-shadow: 0px 0px 10px #06001b25;
+    box-shadow: 0px 0px 20px #06001b91;
 }
 .texto-conteudos > h2 {
     color: var(--cor-azul02);
@@ -368,7 +375,12 @@ div.exterior-video {
     font-family: var(--fonte-padrao);
     color: #fff;
     height: 200px;
-    background-image: linear-gradient(to right, #0167ff, #0041a1);
+    background: linear-gradient(var(--cor-azul02), var(--cor-preto01));
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -437,7 +449,7 @@ div.exterior-video {
     width: 20px;
     height: 20px; 
     position: relative;
-    color: var(--clr);
+    color: var(--cor-azul02);
     background-color: #fff;
     border-radius: 50%;
     display: grid;
@@ -445,10 +457,10 @@ div.exterior-video {
     overflow: hidden;
   }
 .button:hover {
-    background-color: #000;
+    background-color: var(--cor-preto01);
   }
 .button:hover .button__icon-wrapper {
-    color: #000;
+    color: var(--cor-preto01);
   }
   .button__icon-svg--copy {
     position: absolute;
@@ -467,7 +479,7 @@ div.exterior-video {
 footer {
     margin-top: 20px;
     max-height: 500px;
-    background-image: linear-gradient(to right, #1e1e1e, #000 );
+    background-image: linear-gradient(to right, var(--cor-preto00), var(--cor-preto01));
     padding: 20px;
 }
 #topo-rodape {
@@ -530,7 +542,7 @@ footer {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    color: #4d4d4d;
+    color: var(--cor-preto00);
     background-color: #fff;
     transition: all 0.3s ease-in-out;
 }
@@ -561,23 +573,14 @@ footer {
 }
 .example-2 .icon-content a[data-social="instagram"] .filled,
 .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
-    background: linear-gradient(
-        45deg,
-        #0167ff,
-        #0167ff,
-        #0167ff,
-        #0167ff,
-        #0167ff,
-        #0167ff
-);
-font-family: var(--fonte-padrao);
+    background-color: var(--cor-azul02);
+    font-family: var(--fonte-padrao);
 }
 .example-2 .icon-content a[data-social="youtube"] .filled,
 .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
-    background-color: #0167ff;
+    background-color: var(--cor-azul02);
     font-family: var(--fonte-padrao);
 } 
-
 #meio-rodape {
     max-width: 800px;
     display: flex;
@@ -593,7 +596,7 @@ font-family: var(--fonte-padrao);
     font-family: var(--fonte-padrao);
     font-weight: 500;
     font-size: .9vw;
-    color: #000000;
+    color: var(--cor-preto02);
     background-color: rgb(245, 245, 245);
     box-shadow: 0 0 .4vw rgba(0,0,0,0.5), 0 0 0 .15vw transparent;
     border-radius: 0.4vw;
@@ -610,7 +613,7 @@ font-family: var(--fonte-padrao);
     box-shadow: 0 0 0 .15vw skyblue;
 }
 .subscribe-button {
-    background-color: #1e1e1e;
+    background-color: var(--cor-preto01);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -619,7 +622,7 @@ font-family: var(--fonte-padrao);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 .subscribe-button:hover {
-    background-color: #0167ff;
+    background-color: var(--cor-azul02);
     transition: .5s;
 }
 
