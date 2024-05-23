@@ -4,7 +4,7 @@ Visando algo mais moderno e simplificado, o projeto foi iniciado com o objetivo 
 
 Apesar da opção de utilizar o código pronto da plataforma e somente realizar as mudanças estipuladas, optamos por criar um __projeto do começo__, para que a visualização e as mudanças no código fossem mais compreensiveis para os membros do grupo, alem de uma maior organização na produção do código.
 
-Ao finalizar o projeto, acessamos o repositório, e na aba "pages" das configurações, hospedamos ele no "Github Pages", para que dessa forma, acesso ao site seja mais simplificado.
+Ao finalizar o projeto, acessamos o repositório, e na aba "pages" das configurações, hospedamos ele no "Github Pages", para que dessa forma, o acesso ao site seja mais simplificado.
 
 ***
 Link do site hospedado: https://rafaelsouzapinto.github.io/Bonsae/
